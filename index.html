@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Tracker - Top 15 Criptomoedas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-coins"></i> Crypto Tracker</h1>
+            <p>Top 15 Criptomoedas do Mercado</p>
+            <div class="currency-selector">
+                <label for="currency">Exibir em:</label>
+                <select id="currency">
+                    <option value="usd">USD</option>
+                    <option value="brl">BRL</option>
+                    <option value="eur">EUR</option>
+                    <option value="gbp">GBP</option>
+                    <option value="jpy">JPY</option>
+                </select>
+            </div>
+            <div class="last-update">
+                Última atualização: <span id="lastUpdate">Carregando...</span>
+            </div>
+        </header>
+
+        <div class="loading" id="loading">
+            <i class="fas fa-spinner fa-spin"></i>
+            <p>Carregando dados das criptomoedas...</p>
+        </div>
+
+        <div class="crypto-grid" id="cryptoGrid">
+            <!-- Os cards das criptomoedas serão inseridos aqui via JavaScript -->
+        </div>
+
+        <footer>
+            <p>Dados fornecidos pela CoinGecko API</p>
+            <p>Atualização automática a cada 30 segundos</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
